@@ -17,21 +17,7 @@ public class paint{
         int b=r.nextInt();
         int c=r.nextInt();
         int d=r.nextInt();
-        int []bruh = new int[100];
-        for (int i=0;i<bruh.length;i++){
-            if (i<=b & i>=a){
-                bruh[i]=1;
-            }
-            if (i<=d & i>=c){
-                bruh[i]=1;
-            }
-        }
-        int ans=0;
-        for (int i=0;i<bruh.length;i++){
-            if (bruh[i]==1){
-                ans+=1;
-            }
-        }
+        int ans = Math.max(a,(Math.max(b,Math.max(c,d))))-Math.min(a,Math.min(b,Math.min(c,d)));
         pw.println(ans);
         pw.close();
     }

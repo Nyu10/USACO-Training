@@ -1,0 +1,9 @@
+1) If numEven == numOdd { return numEven + numOdd }
+
+2) If numEven > numOdd { return numOdd *2 +1 }
+
+3) If numOdd > numEven {
+            if ((numOdd-numEven) % 3==0 || (numOdd-numEven+1) % 3 == 0 { return 
+                 numEven*2 + (numOdd- numEven)*2/3) }
+            else { return numEven*2 + (numOdd-numEven) * 2/3 -1) }
+     }
